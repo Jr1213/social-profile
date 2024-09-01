@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --background: #111111;
+  --background-lite: #1a1818;
+  --background-liter: #574d4d;
+  --text: #ece2e2;
+  --hover: #dfe230;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--background-lite);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.card-image img {
+  display: block;
+  width: 25%;
+  border-radius: 500px;
+}
+
+.name {
+  color: var(--text);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.location {
+  color: var(--hover);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.quot {
+  color: var(--text);
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.links {
+  list-style: none;
+  width: 100%;
+}
+
+.links li {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+li a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--background-liter);
+  display: block;
+  padding: 1rem 0;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+
+li a:hover {
+  background-color: var(--hover);
+  color: var(--background-lite);
+}
